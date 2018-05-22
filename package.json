@@ -1,0 +1,47 @@
+{
+  "name": "drltimesheet",
+  "version": "1.0.0",
+  "description": "timesheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start -n 'drlbackend' index.js",
+    "restart": "pm2 restart all",
+    "status": "pm2 status",
+    "kill": "pm2 kill",
+    "stop": "pm2 stop all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mobiniusPiyush@bitbucket.org/mobinius/drl_timesheet_backend.git"
+  },
+  "keywords": [
+    "timesheet"
+  ],
+  "author": "piyush",
+  "license": "MIT",
+  "homepage": "https://mobiniusPiyush@bitbucket.org/mobinius/drl_timesheet_backend.git#readme",
+  "dependencies": {
+    "async": "2.6.0",
+    "bluebird": "3.5.1",
+    "body-parser": "1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "2.8.4",
+    "csv": "2.0.0",
+    "csv-parse": "2.0.0",
+    "express": "4.16.2",
+    "helmet": "3.9.0",
+    "jwt-simple": "^0.5.1",
+    "moment": "2.19.2",
+    "mongoose": "4.12.5",
+    "multer": "1.3.0",
+    "node-cron": "1.2.1",
+    "nodemailer": "4.4.2",
+    "pm2": "2.8.0",
+    "redis": "^2.8.0",
+    "tracer": "0.8.11",
+    "underscore": "1.8.3",
+    "uuid": "3.1.0",
+    "xls-to-json-lc": "0.3.4"
+  }
+}
