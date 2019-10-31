@@ -20,9 +20,8 @@ let Redis = function () {
                     resolve(success);
                 }
             })
-        })
-
-    }
+        });
+    };
 
     // function to set the token without expire time
     this.set = (key, value) => {
